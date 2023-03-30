@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <span>ssss4444444444</span>
-    <el-button type="primary">主要按钮</el-button>
-    <el-button type="success">成功按钮</el-button>
+    <el-container class="app-out-pannel">
+      <el-header class="sys-header">一张图项目系统</el-header>
+      <el-container class="app-content-pannel">
+        <el-aside width="200px" class="sys-menu">左侧菜单</el-aside>
+        <el-main>地图区域</el-main>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
@@ -23,5 +27,21 @@ body,
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+.app-out-pannel,
+.app-content-pannel {
+  height: 100%;
+}
+
+.sys-header {
+  background-color: #409EFF;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.sys-menu {
+  background-color: #C0C4CC;
 }
 </style>
